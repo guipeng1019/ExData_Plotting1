@@ -52,7 +52,7 @@ plot4 <- function(con= "./household_power_consumption.txt"){
   with(hpc, lines(fulltime,Sub_metering_3,lwd=1.5, col="blue"))
   
   ### Add legend      
-  legend("topright", pch = "-", cex= 0.8,
+  legend("topright", lty=c(1,1,1), cex= 0.8,
          legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
          col = c("black", "red", "blue"))
   
